@@ -1,6 +1,6 @@
 <?php
 
-namespace HelgeSverre\Extractor\Text;
+namespace TheAi\Extractor\Text;
 
 use Illuminate\Support\Str;
 use Symfony\Component\DomCrawler\Crawler;

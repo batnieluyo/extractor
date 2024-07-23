@@ -1,6 +1,6 @@
 <?php
 
-namespace HelgeSverre\Extractor;
+namespace TheAi\Extractor;
 
 use Spatie\LaravelData\Data;
 

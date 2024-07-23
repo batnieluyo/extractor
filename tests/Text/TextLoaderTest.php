@@ -1,9 +1,9 @@
 <?php
 
-use HelgeSverre\Extractor\Facades\Text;
-use HelgeSverre\Extractor\Text\Loaders\Textract\TextractService;
-use HelgeSverre\Extractor\Text\Loaders\Textract\TextractUsingS3Upload;
-use HelgeSverre\Extractor\Text\TextContent;
+use TheAi\Extractor\Facades\Text;
+use TheAi\Extractor\Text\Loaders\Textract\TextractService;
+use TheAi\Extractor\Text\Loaders\Textract\TextractUsingS3Upload;
+use TheAi\Extractor\Text\TextContent;
 use Illuminate\Support\Facades\Storage;
 
 it('Can load Text', function () {

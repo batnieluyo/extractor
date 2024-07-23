@@ -1,9 +1,9 @@
 <?php
 
-namespace HelgeSverre\Extractor\Contracts;
+namespace TheAi\Extractor\Contracts;
 
-use HelgeSverre\Extractor\Extraction\Extractor;
-use HelgeSverre\Extractor\Text\TextContent;
+use TheAi\Extractor\Extraction\Extractor;
+use TheAi\Extractor\Text\TextContent;
 
 interface Engine
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace HelgeSverre\Extractor\Extraction\Concerns;
+namespace TheAi\Extractor\Extraction\Concerns;
 
-use HelgeSverre\Extractor\Extraction\Extractor;
+use TheAi\Extractor\Extraction\Extractor;
 use Spatie\LaravelData\Contracts\BaseData;
 use Spatie\LaravelData\Exceptions\InvalidDataClass;
 

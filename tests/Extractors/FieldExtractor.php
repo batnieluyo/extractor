@@ -1,8 +1,8 @@
 <?php
 
-use HelgeSverre\Extractor\Engine;
-use HelgeSverre\Extractor\Facades\Extractor;
-use HelgeSverre\Extractor\Facades\Text;
+use TheAi\Extractor\Engine;
+use TheAi\Extractor\Facades\Extractor;
+use TheAi\Extractor\Facades\Text;
 
 it('can extract simple fields using gpt 3.5 json mode', function () {
     $sample = Text::html(file_get_contents(__DIR__.'/../samples/event-page.html'));

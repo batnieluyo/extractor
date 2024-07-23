@@ -1,6 +1,6 @@
 <?php
 
-use HelgeSverre\Extractor\Text\Utils;
+use TheAi\Extractor\Text\Utils;
 
 it('normalizes whitespace', function () {
     $input = '   Hello   World!   ';

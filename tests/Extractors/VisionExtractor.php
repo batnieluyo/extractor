@@ -1,8 +1,8 @@
 <?php
 
-use HelgeSverre\Extractor\Engine;
-use HelgeSverre\Extractor\Facades\Extractor;
-use HelgeSverre\Extractor\Text\ImageContent;
+use TheAi\Extractor\Engine;
+use TheAi\Extractor\Facades\Extractor;
+use TheAi\Extractor\Text\ImageContent;
 
 it('Can extract REMA offer catalog details data from an image (converted from WEBP to PNG and ran through TinyPNG) ', function () {
     $data = Extractor::fields(

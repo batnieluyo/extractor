@@ -1,8 +1,8 @@
 <?php
 
-namespace HelgeSverre\Extractor\Facades;
+namespace TheAi\Extractor\Facades;
 
-use HelgeSverre\Extractor\Text\Factory;
+use TheAi\Extractor\Text\Factory;
 use Illuminate\Support\Facades\Facade;
 
 /**

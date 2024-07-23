@@ -1,9 +1,9 @@
 <?php
 
-namespace HelgeSverre\Extractor\Extraction;
+namespace TheAi\Extractor\Extraction;
 
-use HelgeSverre\Extractor\Extraction\Concerns\DecodesResponse;
-use HelgeSverre\Extractor\Text\TextContent;
+use TheAi\Extractor\Extraction\Concerns\DecodesResponse;
+use TheAi\Extractor\Text\TextContent;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

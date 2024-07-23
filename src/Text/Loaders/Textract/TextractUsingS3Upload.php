@@ -1,15 +1,15 @@
 <?php
 
-namespace HelgeSverre\Extractor\Text\Loaders\Textract;
+namespace TheAi\Extractor\Text\Loaders\Textract;
 
-use HelgeSverre\Extractor\Contracts\TextLoader;
-use HelgeSverre\Extractor\Text\Loaders\Textract\Data\S3Object;
-use HelgeSverre\Extractor\Text\Loaders\Textract\Exceptions\TextractConfigNotFoundException;
-use HelgeSverre\Extractor\Text\Loaders\Textract\Exceptions\TextractFailed;
-use HelgeSverre\Extractor\Text\Loaders\Textract\Exceptions\TextractStorageException;
-use HelgeSverre\Extractor\Text\Loaders\Textract\Exceptions\TextractTimedOut;
-use HelgeSverre\Extractor\Text\Loaders\Textract\Exceptions\TextractUnhandledStatus;
-use HelgeSverre\Extractor\Text\TextContent;
+use TheAi\Extractor\Contracts\TextLoader;
+use TheAi\Extractor\Text\Loaders\Textract\Data\S3Object;
+use TheAi\Extractor\Text\Loaders\Textract\Exceptions\TextractConfigNotFoundException;
+use TheAi\Extractor\Text\Loaders\Textract\Exceptions\TextractFailed;
+use TheAi\Extractor\Text\Loaders\Textract\Exceptions\TextractStorageException;
+use TheAi\Extractor\Text\Loaders\Textract\Exceptions\TextractTimedOut;
+use TheAi\Extractor\Text\Loaders\Textract\Exceptions\TextractUnhandledStatus;
+use TheAi\Extractor\Text\TextContent;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;

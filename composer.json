@@ -1,5 +1,5 @@
 {
-    "name": "helgesverre/extractor",
+    "name": "batnieluyo/extractor",
     "description": "AI-Powered Data Extraction for your Laravel application.",
     "keywords": [
         "laravel-package",
@@ -8,7 +8,7 @@
         "openai",
         "ai"
     ],
-    "homepage": "https://github.com/helgesverre/extractor",
+    "homepage": "https://github.com/batnieluyo/extractor",
     "license": "MIT",
     "authors": [
         {
@@ -42,12 +42,12 @@
     },
     "autoload": {
         "psr-4": {
-            "HelgeSverre\\Extractor\\": "src/"
+            "TheAi\\Extractor\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "HelgeSverre\\Extractor\\Tests\\": "tests/",
+            "TheAi\\Extractor\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/",
             "Workbench\\Database\\Factories\\": "workbench/database/factories/",
             "Workbench\\Database\\Seeders\\": "workbench/database/seeders/"
@@ -90,11 +90,11 @@
     "extra": {
         "laravel": {
             "providers": [
-                "HelgeSverre\\Extractor\\ExtractorServiceProvider"
+                "TheAi\\Extractor\\ExtractorServiceProvider"
             ],
             "aliases": {
-                "Extractor": "HelgeSverre\\Extractor\\Facades\\Extractor",
-                "Text": "HelgeSverre\\Extractor\\Facades\\Text"
+                "Extractor": "TheAi\\Extractor\\Facades\\Extractor",
+                "Text": "TheAi\\Extractor\\Facades\\Text"
             }
         }
     },

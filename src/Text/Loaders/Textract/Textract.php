@@ -1,9 +1,9 @@
 <?php
 
-namespace HelgeSverre\Extractor\Text\Loaders\Textract;
+namespace TheAi\Extractor\Text\Loaders\Textract;
 
-use HelgeSverre\Extractor\Contracts\TextLoader;
-use HelgeSverre\Extractor\Text\TextContent;
+use TheAi\Extractor\Contracts\TextLoader;
+use TheAi\Extractor\Text\TextContent;
 
 /**
  * Takes the input and sends it directly to Textract, meant for images, does not work for PDFs or very large files,

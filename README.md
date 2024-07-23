@@ -28,8 +28,8 @@ Laravel application.
 ```php
 <?php
 
-use HelgeSverre\Extractor\Facades\Extractor;
-use HelgeSverre\Extractor\Facades\Text;
+use TheAi\Extractor\Facades\Extractor;
+use TheAi\Extractor\Facades\Text;
 use Illuminate\Support\Facades\Storage;
 
 $image = Storage::get("restaurant_menu.png")
@@ -90,7 +90,7 @@ OPENAI_REQUEST_TIMEOUT=60
 ### Extracting plain text from documents
 
 ```php
-use HelgeSverre\Extractor\Facades\Text;
+use TheAi\Extractor\Facades\Text;
 
 $textPlainText = Text::text(file_get_contents('./data.txt'));
 $textPdf = Text::pdf(file_get_contents('./data.pdf'));
@@ -121,7 +121,7 @@ methods for each:
 | Example                                                          | Extractor | Description                                                                                                         |
 |------------------------------------------------------------------|-----------|---------------------------------------------------------------------------------------------------------------------|
 | `Extractor::extract(Contacts::class, $text);`                    | Contacts  | Extracts a list of contacts (name, title, email, phone).                                                            |
-| `Extractor::extract(Receipt::class, $text);`                     | Receipt   | Extracts common Receipt data, See [receipt-scanner](https://github.com/HelgeSverre/receipt-scanner) for details.    |
+| `Extractor::extract(Receipt::class, $text);`                     | Receipt   | Extracts common Receipt data, See [receipt-scanner](https://github.com/TheAi/receipt-scanner) for details.    |
 | `Extractor::fields($text, fields: ["name","address", "phone"]);` | Fields    | Extracts arbitrary fields provided as an array of output key, and optional description, also supports nested fields |
 
 These extractors are provided out of the box and offer a convenient way to extract specific types of structured data
@@ -178,7 +178,7 @@ Here's how you can use each method:
 #### Using a File Path
 
 ```php
-use HelgeSverre\Extractor\Text\ImageContent;
+use TheAi\Extractor\Text\ImageContent;
 
 $imagePath = __DIR__ . '/../samples/sample-image.jpg';
 $imageContent = ImageContent::file($imagePath);
@@ -187,7 +187,7 @@ $imageContent = ImageContent::file($imagePath);
 #### Using Raw Image Data
 
 ```php
-use HelgeSverre\Extractor\Text\ImageContent;
+use TheAi\Extractor\Text\ImageContent;
 
 $rawImageData = file_get_contents(__DIR__ . '/../samples/sample-image.jpg');
 $imageContent = ImageContent::raw($rawImageData);
@@ -196,7 +196,7 @@ $imageContent = ImageContent::raw($rawImageData);
 #### Using an Image URL
 
 ```php
-use HelgeSverre\Extractor\Text\ImageContent;
+use TheAi\Extractor\Text\ImageContent;
 
 $imageUrl = 'https://example.com/sample-image.jpg';
 $imageContent = ImageContent::url($imageUrl);
@@ -208,8 +208,8 @@ After preparing your `ImageContent` object, you can pass it to the `Extractor::f
 using OpenAI's Vision API. For example:
 
 ```php
-use HelgeSverre\Extractor\Facades\Extractor;
-use HelgeSverre\Extractor\Text\ImageContent;
+use TheAi\Extractor\Facades\Extractor;
+use TheAi\Extractor\Text\ImageContent;
 
 $imageContent = ImageContent::file(__DIR__ . '/../samples/product-catalog.jpg');
 
@@ -239,7 +239,8 @@ a `JobPostingExtractor` to extract key information from job postings:
 
 namespace App\Extractors;
 
-use HelgeSverre\Extractor\Extraction\Extractor;use HelgeSverre\Extractor\Text\TextContent;
+use TheAi\Extractor\Extraction\Extractor;
+use TheAi\Extractor\Text\TextContent;
 
 class JobPostingExtractor extends Extractor
 {
@@ -274,7 +275,7 @@ it will tell the base Extractor class which key to pull the data from.
 After defining your custom extractor, register it with the main Extractor class using the `extend` method:
 
 ```php
-use HelgeSverre\Extractor\Extractor;
+use TheAi\Extractor\Extractor;
 
 Extractor::extend("job-posting", fn() => new JobPostingExtractor());
 ```
@@ -285,8 +286,8 @@ Once registered, you can use your custom extractor just like the built-in ones. 
 the `JobPostingExtractor`:
 
 ```php
-use HelgeSverre\Extractor\Facades\Text;
-use HelgeSverre\Extractor\Extractor;
+use TheAi\Extractor\Facades\Text;
+use TheAi\Extractor\Extractor;
 
 $jobPostingContent = Text::web("https://www.finn.no/job/fulltime/ad.html?finnkode=329443482");
 
@@ -310,8 +311,8 @@ by using the `HasValidation` trait and defining validation rules in the `rules` 
 
 namespace App\Extractors;
 
-use HelgeSverre\Extractor\Extraction\Concerns\HasValidation;
-use HelgeSverre\Extractor\Extraction\Extractor;
+use TheAi\Extractor\Extraction\Concerns\HasValidation;
+use TheAi\Extractor\Extraction\Extractor;
 
 class JobPostingExtractor extends Extractor
 {
@@ -347,8 +348,8 @@ namespace App\Extractors;
 
 use DateTime;
 use App\Extractors\JobPostingDto;
-use HelgeSverre\Extractor\Extraction\Concerns\HasDto;
-use HelgeSverre\Extractor\Extraction\Extractor;
+use TheAi\Extractor\Extraction\Concerns\HasDto;
+use TheAi\Extractor\Extraction\Extractor;
 use Spatie\LaravelData\Data;
 
 class JobPostingDto extends Data

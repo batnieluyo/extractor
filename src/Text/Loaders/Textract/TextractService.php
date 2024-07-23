@@ -1,13 +1,13 @@
 <?php
 
-namespace HelgeSverre\Extractor\Text\Loaders\Textract;
+namespace TheAi\Extractor\Text\Loaders\Textract;
 
 use Aws\Textract\TextractClient;
-use HelgeSverre\Extractor\Text\Loaders\Textract\Data\Response;
-use HelgeSverre\Extractor\Text\Loaders\Textract\Data\S3Object;
-use HelgeSverre\Extractor\Text\Loaders\Textract\Exceptions\TextractFailed;
-use HelgeSverre\Extractor\Text\Loaders\Textract\Exceptions\TextractTimedOut;
-use HelgeSverre\Extractor\Text\Loaders\Textract\Exceptions\TextractUnhandledStatus;
+use TheAi\Extractor\Text\Loaders\Textract\Data\Response;
+use TheAi\Extractor\Text\Loaders\Textract\Data\S3Object;
+use TheAi\Extractor\Text\Loaders\Textract\Exceptions\TextractFailed;
+use TheAi\Extractor\Text\Loaders\Textract\Exceptions\TextractTimedOut;
+use TheAi\Extractor\Text\Loaders\Textract\Exceptions\TextractUnhandledStatus;
 use Illuminate\Support\Arr;
 
 class TextractService

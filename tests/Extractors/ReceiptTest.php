@@ -1,9 +1,9 @@
 <?php
 
-use HelgeSverre\Extractor\Engine;
-use HelgeSverre\Extractor\Extraction\Builtins\Receipt;
-use HelgeSverre\Extractor\Facades\Extractor;
-use HelgeSverre\Extractor\Facades\Text;
+use TheAi\Extractor\Engine;
+use TheAi\Extractor\Extraction\Builtins\Receipt;
+use TheAi\Extractor\Facades\Extractor;
+use TheAi\Extractor\Facades\Text;
 
 it('can extract receipt from pdf using gpt4 json mode', function () {
 

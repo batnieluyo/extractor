@@ -1,16 +1,16 @@
 <?php
 
-namespace HelgeSverre\Extractor\Text;
+namespace TheAi\Extractor\Text;
 
-use HelgeSverre\Extractor\Contracts\TextLoader;
-use HelgeSverre\Extractor\Text\Loaders\Html;
-use HelgeSverre\Extractor\Text\Loaders\Pdf;
-use HelgeSverre\Extractor\Text\Loaders\Rtf;
-use HelgeSverre\Extractor\Text\Loaders\Text;
-use HelgeSverre\Extractor\Text\Loaders\Textract\Textract;
-use HelgeSverre\Extractor\Text\Loaders\Textract\TextractUsingS3Upload;
-use HelgeSverre\Extractor\Text\Loaders\Web;
-use HelgeSverre\Extractor\Text\Loaders\Word;
+use TheAi\Extractor\Contracts\TextLoader;
+use TheAi\Extractor\Text\Loaders\Html;
+use TheAi\Extractor\Text\Loaders\Pdf;
+use TheAi\Extractor\Text\Loaders\Rtf;
+use TheAi\Extractor\Text\Loaders\Text;
+use TheAi\Extractor\Text\Loaders\Textract\Textract;
+use TheAi\Extractor\Text\Loaders\Textract\TextractUsingS3Upload;
+use TheAi\Extractor\Text\Loaders\Web;
+use TheAi\Extractor\Text\Loaders\Word;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Support\Str;
 use Illuminate\Support\Traits\Macroable;

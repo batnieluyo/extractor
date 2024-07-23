@@ -1,9 +1,9 @@
 <?php
 
-namespace HelgeSverre\Extractor;
+namespace TheAi\Extractor;
 
 use Aws\Textract\TextractClient;
-use HelgeSverre\Extractor\Text\Factory;
+use TheAi\Extractor\Text\Factory;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 

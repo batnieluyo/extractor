@@ -1,6 +1,6 @@
 <?php
 
-namespace HelgeSverre\Extractor\Text\Loaders\Textract;
+namespace TheAi\Extractor\Text\Loaders\Textract;
 
 enum Status: string
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace HelgeSverre\Extractor\Extraction\Builtins;
+namespace TheAi\Extractor\Extraction\Builtins;
 
-use HelgeSverre\Extractor\Extraction\Concerns\HasValidation;
-use HelgeSverre\Extractor\Extraction\Extractor;
+use TheAi\Extractor\Extraction\Concerns\HasValidation;
+use TheAi\Extractor\Extraction\Extractor;
 
 class Receipt extends Extractor
 {

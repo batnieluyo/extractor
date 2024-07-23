@@ -1,8 +1,8 @@
 <?php
 
-namespace HelgeSverre\Extractor\Extraction\Concerns;
+namespace TheAi\Extractor\Extraction\Concerns;
 
-use HelgeSverre\Extractor\Extraction\Extractor;
+use TheAi\Extractor\Extraction\Extractor;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 

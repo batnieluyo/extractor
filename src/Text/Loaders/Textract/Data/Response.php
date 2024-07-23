@@ -1,6 +1,6 @@
 <?php
 
-namespace HelgeSverre\Extractor\Text\Loaders\Textract\Data;
+namespace TheAi\Extractor\Text\Loaders\Textract\Data;
 
 use Aws\Result;
 use Illuminate\Support\Arr;

@@ -1,9 +1,9 @@
 <?php
 
-namespace HelgeSverre\Extractor\Tests;
+namespace TheAi\Extractor\Tests;
 
 use Dotenv\Dotenv;
-use HelgeSverre\Extractor\ExtractorServiceProvider;
+use TheAi\Extractor\ExtractorServiceProvider;
 use OpenAI\Laravel\ServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Spatie\LaravelData\LaravelDataServiceProvider;

@@ -1,8 +1,8 @@
 <?php
 
-namespace HelgeSverre\Extractor\Contracts;
+namespace TheAi\Extractor\Contracts;
 
-use HelgeSverre\Extractor\Text\TextContent;
+use TheAi\Extractor\Text\TextContent;
 
 interface TextLoader
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace HelgeSverre\Extractor\Text\Loaders;
+namespace TheAi\Extractor\Text\Loaders;
 
-use HelgeSverre\Extractor\Contracts\TextLoader;
-use HelgeSverre\Extractor\Text\TextContent;
-use HelgeSverre\Extractor\Text\Utils;
+use TheAi\Extractor\Contracts\TextLoader;
+use TheAi\Extractor\Text\TextContent;
+use TheAi\Extractor\Text\Utils;
 
 class Html implements TextLoader
 {

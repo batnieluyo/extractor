@@ -1,6 +1,6 @@
 <?php
 
-namespace HelgeSverre\Extractor\Exceptions;
+namespace TheAi\Extractor\Exceptions;
 
 use Exception;
 

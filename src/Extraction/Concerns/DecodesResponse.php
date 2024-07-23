@@ -1,9 +1,9 @@
 <?php
 
-namespace HelgeSverre\Extractor\Extraction\Concerns;
+namespace TheAi\Extractor\Extraction\Concerns;
 
-use HelgeSverre\Extractor\Exceptions\InvalidJsonReturnedError;
-use HelgeSverre\Extractor\Extraction\Extractor;
+use TheAi\Extractor\Exceptions\InvalidJsonReturnedError;
+use TheAi\Extractor\Extraction\Extractor;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 

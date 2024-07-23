@@ -1,6 +1,6 @@
 <?php
 
-namespace HelgeSverre\Extractor\Text;
+namespace TheAi\Extractor\Text;
 
 use BrandEmbassy\FileTypeDetector\Detector;
 

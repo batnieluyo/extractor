@@ -1,10 +1,10 @@
 <?php
 
-namespace HelgeSverre\Extractor;
+namespace TheAi\Extractor;
 
-use HelgeSverre\Extractor\Extraction\Extractor;
-use HelgeSverre\Extractor\Text\ImageContent;
-use HelgeSverre\Extractor\Text\TextContent;
+use TheAi\Extractor\Extraction\Extractor;
+use TheAi\Extractor\Text\ImageContent;
+use TheAi\Extractor\Text\TextContent;
 use InvalidArgumentException;
 use OpenAI\Laravel\Facades\OpenAI;
 use OpenAI\Responses\Chat\CreateResponse as ChatResponse;

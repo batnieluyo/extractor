@@ -1,9 +1,9 @@
 <?php
 
-namespace HelgeSverre\Extractor\Extraction\Builtins;
+namespace TheAi\Extractor\Extraction\Builtins;
 
-use HelgeSverre\Extractor\Extraction\Extractor;
-use HelgeSverre\Extractor\Text\ImageContent;
+use TheAi\Extractor\Extraction\Extractor;
+use TheAi\Extractor\Text\ImageContent;
 use Illuminate\Contracts\View\View;
 
 class Fields extends Extractor
