@@ -2,8 +2,8 @@
 
 # Extractor: AI-Powered Data Extraction Library for Laravel.
 
-![Latest Version on Packagist](https://img.shields.io/packagist/v/helgesverre/extractor.svg?style=flat-square)
-![Total Downloads](https://img.shields.io/packagist/dt/helgesverre/extractor.svg?style=flat-square)
+![Latest Version on Packagist](https://img.shields.io/packagist/v/batnieluyo/extractor.svg?style=flat-square)
+![Total Downloads](https://img.shields.io/packagist/dt/batnieluyo/extractor.svg?style=flat-square)
 
 Effortlessly extract structured data from various sources, including images, PDFs, and emails, using OpenAI within your
 Laravel application.
@@ -60,7 +60,7 @@ $menu = Extractor::fields($textFromImage,
 Install the package via composer:
 
 ```bash
-composer require helgesverre/extractor
+composer require batnieluyo/extractor
 ```
 
 Publish the configuration file:
